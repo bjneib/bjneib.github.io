@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/large.css">
+  <link rel="stylesheet" href="css/medium.css">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/weather.css">
+  <title>Weather Site</title>
+</head>
+
+<body>
+  <header>
+    <h1>Site Plan</h1>
+  </header>
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="target-audience.html">Target Audience</a></li>
+      <li><a href="color-scheme.html">Color Scheme</a></li>
+      <li><a href="typography.html">Typography</a></li>
+    </ul>
+  </nav>
+  <h2>Site Name</h2>
+  <p>The domain name is "www.theweatherday.com". This domain name is available from <a href="https://hostgator.com">Host
+      Gator</a> for $12.95 per year.</p>
+  <h2>Site Purpose</h2>
+  <p>The purpose for this weather site is to provide realtime weather for those who are wanting to spend time
+    in the areas that are provided, or are even just curious to what the weather is. It also provides storm insight
+    and a gallery to give an idea for visitors of what it will be like.
+  </p>
+  <h2>Site Logo</h2>
+  <img id="logo" src="img/weatherday.png" alt="The Weather Day">
+  <footer>
+    <div>
+      &copy;<span id="copyright"></span>2020 | Bron | Neibaur | <a href="https://www.byui.edu/online">BYUI Online
+        Learning</a>
+    </div>
+    Last Updated: <span id="lastUpdate"></span>
+  </footer>
+  <script>
+    document.getElementById("lastUpdate").innerHTML = document.lastModified;
+  </script>
+</body>
+
+</html>

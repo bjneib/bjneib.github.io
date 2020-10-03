@@ -1,0 +1,125 @@
+a {
+  color: #FBEEC1;
+  font-weight: bold;
+}
+
+li a:hover {
+  background-color: #89581a;
+}
+
+body {
+  margin: 0 auto;
+  font-family: 'Poppins', sans-serif;
+  background-color: #E1A95F;
+  color: #FBEEC1;
+}
+
+header {
+  background-color: #659DBD;
+  border-radius: 10px;
+  padding-bottom: 22px;
+}
+
+h1 {
+  padding-top: 15px;
+  text-align: center;
+}
+
+h3 {
+  padding-bottom: 8px;
+}
+
+#logo {
+  height: 150px;
+  width: auto;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 1fr;
+  margin: auto;
+}
+
+nav {
+  width: 100%;
+  margin: 0 auto;
+  background-color: #BC986A;
+  text-align: center;
+  box-shadow: 0 2px 15px gray;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li a {
+  display: block;
+  color: white;
+  text-align: center;
+}
+
+#joey {
+  height: 200px;
+  width: auto;
+}
+
+#karen {
+  height: 220px;
+  width: auto;
+}
+
+section {
+  background-color: #4682B4;
+  border-radius: 10px;
+  text-align: center;
+  margin: 10px;
+}
+
+#scheme1 {
+  background-color: #E1A95F;
+  width: 50%;
+}
+
+#scheme2 {
+  background-color: #659DBD;
+  width: 50%;
+}
+
+#scheme3 {
+  background-color: #BC986A;
+  width: 50%;
+}
+
+#scheme4 {
+  background-color: white;
+  color: brown;
+  width: 50%;
+}
+
+#scheme5 {
+  background-color: #FBEEC1;
+  width: 50%;
+  color: brown;
+}
+
+table,
+th,
+td {
+  width: 50%;
+  border: 2px solid #BC986A;
+  padding: 5px;
+  margin-bottom: 10px;
+}
+
+footer {
+  background-color: #659DBD;
+  text-align: center;
+  padding-top: 15px;
+  padding-bottom: 20px;
+}
+
+div {
+  text-align: center;
+}

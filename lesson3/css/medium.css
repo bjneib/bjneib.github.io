@@ -1,0 +1,31 @@
+@media only screen and (min-width: 32.5em) {
+
+    body {
+        width: 1000px;
+    }
+
+    main {
+        grid-template-columns: 1fr 1fr;
+        max-width: 800px;
+    }
+
+    header {
+        height: 40px;
+        flex-wrap: wrap;
+        border-radius: 10px;
+    }
+
+    footer {
+        border-radius: 15px;
+        height: 40px;
+    }
+
+    nav ul {
+        display: flex;
+    }
+
+    nav ul li {
+        flex: 1 100%;
+    }
+
+}
