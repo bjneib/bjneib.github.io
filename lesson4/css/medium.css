@@ -1,0 +1,50 @@
+@media only screen and (min-width: 32.5em) {
+
+  h1 {
+    font-size: 45px;
+    margin-top: 0px;
+  }
+
+  h2 {
+    font-size: 25px;
+  }
+
+  header img {
+    height: 125px;
+    width: auto;
+    padding-right: 10px;
+  }
+
+  footer {
+    border-radius: 10px;
+    height: 50px;
+    max-width: 80%;
+  }
+
+  main {
+    max-width: 700px;
+  }
+
+  .navigation {
+    display: flex;
+  }
+
+  .navigation li {
+    display: block;
+    flex: 1 1 100%;
+  }
+
+  .navigation a {
+    text-align: center;
+  }
+
+  .navigation li:first-child {
+    display: none;
+  }
+
+  footer {
+    margin-top: 3%;
+    padding: 8px 8px 16px 8px;
+  }
+
+}
