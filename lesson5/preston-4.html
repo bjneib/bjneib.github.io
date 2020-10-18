@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/preston.css">
+  <link rel="stylesheet" href="css/medium.css">
+  <link rel="stylesheet" href="css/large.css">
+  <title>Preston Weather</title>
+</head>
+
+<body>
+  <header>
+    <picture>
+      <img src="images/weatherday.png" alt="Weather Day">
+    </picture>
+    <section>
+    <h1>Weather Day</h1>
+    <div class="sub-heading">Your 5 Day Weather Forecast</div>
+    </section>
+  </header>
+  <nav>
+    <ul class="navigation" id="my-navigation">
+      <li><a href="#" onclick="toggle()">&#9776; Menu</a></li>
+      <li><a href="#">Home</a></li>
+      <li><a class="active" href="preston-4.html">Preston</a></li>
+      <li><a href="#">Soda Springs</a></li>
+      <li><a href="#">Fish Haven</a></li>
+      <li><a href="#">Storm Center</a></li>
+      <li><a href="#">Gallery</a></li>
+    </ul>
+  </nav>
+  <main>
+    <h2>Preston Idaho</h2>
+    <div class="content-box">Hero w/ weather summary</div>
+    <div class="content-box">5 day forecast</div>
+    <div class="content-box">Articles</div>
+    <div class="content-box">Contact Information</div>
+  </main>
+  <footer>
+    <div>
+      &copy;<span id="copyright"></span>2020 | Bron Neibaur | Idaho | <a href="https://www.byui.edu/online">BYUI Online
+        Learning</a>
+    </div>
+    <script type="text/javascript">
+      var d=new Date()
+      var weekday=new Array("Sunday","Monday","Tuesday","Wednesday","Thursday",
+                      "Friday","Saturday")
+      var monthname=new Array("January","February","March","April","May","June","July","August",
+                      "September","October","November","December")
+      document.write(weekday[d.getDay()] + ", ")
+      document.write(monthname[d.getMonth()] + " ")
+      document.write(d.getDate() + ", ")
+      document.write(d.getFullYear())
+  </script>
+    <span id="lastUpdate"></span>
+  </footer>
+  <script src="/lesson4/js/toggle.js"></script>
+</body>
+
+</html>
