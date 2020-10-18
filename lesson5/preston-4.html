@@ -4,6 +4,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather Day</title>
+  <meta name="description"
+    content="5 day weather forecast for Preston, Idaho on the Weather Day website. Explore and learn before you travel.">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/preston.css">
@@ -13,13 +16,15 @@
 </head>
 
 <body>
+  <div id="banner">Saturday = Preston Pancakes in the Park! 9:00 a.m. Friday at the city park.
+  </div>
   <header>
     <picture>
       <img src="images/weatherday.png" alt="Weather Day">
     </picture>
     <section>
-    <h1>Weather Day</h1>
-    <div class="sub-heading">Your 5 Day Weather Forecast</div>
+      <h1>Weather Day</h1>
+      <div class="sub-heading">Your 5 Day Weather Forecast</div>
     </section>
   </header>
   <nav>
@@ -35,30 +40,89 @@
   </nav>
   <main>
     <h2>Preston Idaho</h2>
-    <div class="content-box">Hero w/ weather summary</div>
-    <div class="content-box">5 day forecast</div>
-    <div class="content-box">Articles</div>
-    <div class="content-box">Contact Information</div>
+    <div class="content-box-1">
+      <img src="images\weatherbanner.jpeg" alt="Banner Summary">
+      <section class="box-summary">
+        <h3>Weather Summary</h3>
+        <p>Currently: Sunny</p>
+        <p>High: 76 °F</p>
+        <p>Wind Chill: °F</p>
+        <p>Humidity: 69%</p>
+        <p>Wind Speed: 5 mph</p>
+      </section>
+    </div>
+    <div class="content-box-2">
+      <h3>5 Day Forecast</h3>
+      <table id="table">
+        <thead>
+          <tr id="inside-table">
+            <th>Wed</th>
+            <th>Thur</th>
+            <th>Fri</th>
+            <th>Sat</th>
+            <th>Sun</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              <img src="images\sunny.png" alt="Sunny">
+              <br>
+              <span>89°F</span>
+            </td>
+            <td>
+              <img src="images\sunny.png" alt="Sunny">
+              <br>
+              <span>87°F</span>
+            </td>
+            <td>
+              <img src="images\sunny.png" alt="Sunny">
+              <br>
+              <span>78°F</span>
+            </td>
+            <td>
+              <img src="images\sunny.png" alt="Sunny">
+              <br>
+              <span>75°F</span>
+            </td>
+            <td>
+              <img src="images\sunny.png" alt="Sunny">
+              <br>
+              <span>72°F</span>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="content-box-3">
+      <img src="images\fall.webp" alt="Fall">
+      <h3>Article</h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda deleniti praesentium voluptatem repellendus
+        quibusdam doloremque. Illum porro provident asperiores maxime aut dolor modi dolorum ab ipsum! Impedit expedita
+        dolores laudantium.</p>
+      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Temporibus alias fuga aut facilis rem at similique
+        cupiditate ad nam? Ea consectetur vel porro deleniti fugiat voluptate voluptas suscipit sit vitae!</p>
+    </div>
+    <div class="content-box-4">
+      <section id="contact">
+        <h3>Contact Information</h3>
+        <p>1234 Street Name</p>
+        <p>Newdale, Idaho</p>
+        <p>83436</p>
+        <p>208-123-4567</p>
+        <p>contact@weatherday.com</p>
+      </section>
+      <img src="images\preston.jpg" alt="Preston Map">
+    </div>
   </main>
   <footer>
     <div>
       &copy;<span id="copyright"></span>2020 | Bron Neibaur | Idaho | <a href="https://www.byui.edu/online">BYUI Online
         Learning</a>
     </div>
-    <script type="text/javascript">
-      var d=new Date()
-      var weekday=new Array("Sunday","Monday","Tuesday","Wednesday","Thursday",
-                      "Friday","Saturday")
-      var monthname=new Array("January","February","March","April","May","June","July","August",
-                      "September","October","November","December")
-      document.write(weekday[d.getDay()] + ", ")
-      document.write(monthname[d.getMonth()] + " ")
-      document.write(d.getDate() + ", ")
-      document.write(d.getFullYear())
-  </script>
     <span id="lastUpdate"></span>
   </footer>
-  <script src="/lesson4/js/toggle.js"></script>
+  <script src="js/toggle.js"></script>
 </body>
 
 </html>
