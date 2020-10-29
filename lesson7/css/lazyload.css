@@ -1,0 +1,36 @@
+body {
+    max-width: 400px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+header {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    padding: 5px 0;
+}
+
+h1 {
+    font-size: 30px;
+}
+
+main {
+    margin: auto;
+    max-width: 400px;
+}
+
+[data-src] {
+    min-width: 50px;
+    min-height: 50px;
+}
+
+img[data-src] {
+    filter: blur(30px);
+}
+
+img {
+    transition: filter 0.5s;
+    margin-top: 20px;
+    border: solid 2px black;
+}
