@@ -1,0 +1,28 @@
+@media only screen and (min-width: 60em) {
+
+  main {
+    max-width: 1000px;
+  }
+
+  h1 {
+    font-size: 50px;
+  }
+
+  h2 {
+    font-size: 40px;
+  }
+
+  #gallery_imgs {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  #gallery_imgs figure:hover {
+    box-shadow: 0 0 50px gray;
+  }
+
+  footer {
+    margin-top: 3%;
+    padding: 10px 10px 20px 10px;
+  }
+
+}
