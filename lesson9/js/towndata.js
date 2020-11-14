@@ -10,7 +10,7 @@ fetch(requestURL)
    for (let i = 0; i < towns.length; i++) {
       if (towns[i].name == "Preston" || towns[i].name == "Fish Haven" || towns[i].name == "Soda Springs") {
       let card = document.createElement('section');
-      
+
       let name = document.createElement('h2');
       name.textContent = towns[i].name;
 
