@@ -140,18 +140,16 @@ nav {
 }
 
 .cards section {
+  width: 80%;
   margin: auto;
-  border: 2px solid #000;
-  border-radius: 8px;
+  border: 2px solid black;
+  border-radius: 5px;
 }
 
 .cards section img {
-  border-radius: 8px;
-  width: 80%;
+  width: 70%;
   height: auto;
   padding: 5px;
-  filter: blur(0em);
-  transition: filter 1s;
 }
 
 footer {

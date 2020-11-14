@@ -55,6 +55,12 @@
     grid-template-columns: 1fr 1fr;
   }
 
+  .cards section img {
+    width: 95%;
+    height: auto;
+    padding: 5px;
+  }
+
   .cards section:nth-child(1) #info {
     grid-column: 2;
     grid-row: 1;
