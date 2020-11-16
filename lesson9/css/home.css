@@ -132,6 +132,14 @@ nav {
   display: block;
 }
 
+#wireframe {
+  text-align: center;
+}
+
+#wireframe a {
+  color: #659DBD;
+}
+
 .cards {
   text-align: center;
   display: grid;
