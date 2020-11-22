@@ -1,0 +1,194 @@
+a {
+  color: #FBEEC1;
+  font-weight: bold;
+}
+
+#banner {
+  display: none;
+  background-color: whitesmoke;
+  text-align: center;
+  font-size: 1.2em;
+  padding: 5px;
+  font-weight: bold;
+}
+
+main {
+  margin: auto;
+}
+
+body {
+  margin: 0 auto;
+  background-color: #FFFDE7;
+  font-family: 'Poppins', sans-serif;
+}
+
+header {
+  color: #FBEEC1;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  padding: 5px 0;
+}
+
+header img {
+  height: 80px;
+  width: auto;
+  padding-right: 10px;
+}
+
+h1 {
+  color: #659DBD;
+  display: flex;
+  align-items: center;
+}
+
+h2 {
+  color: #659DBD;
+  text-align: center;
+}
+
+h3 {
+  text-decoration: underline;
+  text-align: center;
+}
+
+.content-box-1 {
+  margin: 10px auto;
+  position: relative;
+}
+
+.content-box-1 img {
+  width: 100%;
+  height: 400px;
+
+}
+
+.box-summary {
+  position: absolute;
+  width: 20%;
+  top: 30px;
+  left: 30px;
+  font-size: 12px;
+  text-align: center;
+  background: radial-gradient(#eee, #EDF5E1);
+  border: 1px solid #000;
+  padding: 5px;
+  box-shadow: 0 0 30px black;
+  opacity: 0.8;
+}
+
+.content-box-2 {
+  display: none;
+}
+
+#table {
+  margin: 0 auto;
+  width: 700px;
+  text-align: center;
+}
+
+#inside-table {
+  background-color: #BC986A;
+  color: #FBEEC1;
+}
+
+.content-box-3 {
+  display: block;
+  margin-top: 15px;
+  padding: 10px;
+  border: 1px solid black;
+  color: black;
+}
+
+.content-box-3 img {
+  width: 100%;
+  box-shadow: 0 0 10px black;
+}
+
+
+.content-box-4 {
+  display: grid;
+  grid-template-columns: 1fr;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  padding: 10px;
+  border: 1px solid black;
+}
+
+.content-box-4 img {
+  margin: auto;
+  border: 1px solid black;
+}
+
+#contact {
+  grid-column: 1;
+  margin: auto;
+}
+
+#contact p {
+  text-align: center;
+  color: black;
+}
+
+.sub-heading {
+  margin-top: -10%;
+  margin-left: 5%;
+  font-style: italic;
+  font-size: .9em;
+  letter-spacing: 1pt;
+  color: #659DBD;
+}
+
+nav {
+  width: 80%;
+  margin: 0 auto;
+  background-color: #BC986A;
+  box-shadow: 0 2px 15px gray;
+}
+
+.navigation {
+  list-style: none;
+  text-align: center;
+  padding: 0;
+}
+
+.navigation li:first-child {
+  display: block;
+}
+
+.navigation li {
+  display: none;
+}
+
+.navigation a {
+  display: block;
+  padding: 10px;
+  text-align: center;
+  text-decoration: none;
+}
+
+.navigation a:hover {
+  background-color: #a07032;
+}
+
+.active {
+  background-color: #89581a;
+}
+
+.responsive li {
+  display: block;
+}
+
+footer {
+  padding: 5px 5px 10px 5px;
+  background-color: #BC986A;
+  color: #FBEEC1;
+  font-size: 14px;
+  text-align: center;
+  margin: 0 auto;
+  border-radius: 10px;
+}
+
+footer div {
+  margin-top: 2%;
+}
