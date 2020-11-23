@@ -30,7 +30,7 @@
     <ul class="navigation" id="my-navigation">
       <li><a href="#" onclick="toggle()">&#9776; Menu</a></li>
       <li><a href="https://bjneib.github.io/lesson9/index.html">Home</a></li>
-      <li><a class="active" href="https://bjneib.github.io/lesson6/preston-6.html">Preston</a></li>
+      <li><a class="active" href="https://bjneib.github.io/lesson10/preston-10.html">Preston</a></li>
       <li><a href="#">Soda Springs</a></li>
       <li><a href="#">Fish Haven</a></li>
       <li><a href="https://bjneib.github.io/lesson8/stormcenter.html">Storm Center</a></li>
@@ -48,11 +48,11 @@
       </picture>
       <section class="box-summary">
         <h3>Weather Summary</h3>
-        <p>Currently: Sunny</p>
-        <p>High: <span id="temp">45</span>°F</p>
+        <p>Currently: <span id="current"></span></p>
+        <p>Temperature: <span id="temp"></span>°F</p>
         <p>Wind Chill: <span id="windchill"></span>°F</p>
-        <p>Humidity: 69%</p>
-        <p>Wind Speed: <span id="windspeed">5</span> mph</p>
+        <p>Humidity: <span id="humidity"></span>%</p>
+        <p>Wind Speed: <span id="windspeed"></span> mph</p>
       </section>
     </div>
     <div class="content-box-2">
@@ -128,6 +128,7 @@
   </footer>
   <script src="js/toggle.js"></script>
   <script src="js/windchill.js"></script>
+  <script src="js/prestonapi.js"></script>
 </body>
 
 </html>
