@@ -25,6 +25,18 @@
     height: 25px;
   }
 
+  .forecasts {
+    border: 1px solid black;
+  }
+
+  .forecast {
+    margin-left: 170px;
+    display: grid;
+    width: 50%;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    text-align: center;
+  }
+
   .content-box-2 {
     display: block;
   }
