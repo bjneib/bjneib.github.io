@@ -12,6 +12,10 @@
     font-size: 40px;
   }
 
+  .content {
+    border: 1px solid black;
+  }
+
   .forecast {
     margin-left: 250px;
     display: grid;
