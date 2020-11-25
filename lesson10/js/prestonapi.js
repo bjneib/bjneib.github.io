@@ -13,53 +13,29 @@ fetch(apiURL)
 
 const apiURLForecast = "https://api.openweathermap.org/data/2.5/forecast?id=5604473&units=imperial&appid=5fd1f91d346d40de19dc065f7b7cf45f";
 
-/*fetch(apiURLForecast)
+fetch(apiURLForecast)
   .then((response) => response.json())
   .then((jsObject) => {
     console.log(jsObject);
-    const data = jsObject.list.filter((element) => element.dt_txt.includes('18:00:00'));
 
-    console.log(data);
+    const dayHeadings = document.querySelectorAll("#days");
+    let temps = document.querySelectorAll("#temps");
+    let imgs = document.querySelectorAll("#imgs");
 
-    const dayOfWeek = ['Sun', 'Mon', 'Tues', 'Wed', 'Thurs', 'Fri', 'Sat'];
+    const dayOfWeek = ["Sun", "Mon", "Tue", "Wed", "Thur", "Fri", "Sat", "Sun"];
 
     let day = 0;
-    data.forEach(item => {
-      const temp = item.main.temp_max;
-      const iconsrc = '//openweathermap.org/img/w/' + 
-                            item.weather[0].icon + 
-                            '.png';
-      let date = new Date(item.dt_txt);
-      document.getElementById('day').innerText = dayOfWeek[date.getDay()];
-      document.getElementById('img').src = iconsrc;
-      document.getElementById('temp').innerText = temp.toFixed(0) + ' °F';
-      day++;
-    });
-  });*/
+    for (item of jsObject.list) {
+      if (item.dt_txt.includes('18:00:00')) {
+        const date = new Date(item.dt * 1000).getDay();
+        const iconsrc = "https://openweathermap.org/img/w/" + item.weather[0].icon + ".png";
+        const temp = item.main.temp_max;
 
-  fetch(apiURLForecast)
-    .then((response) => response.json())
-    .then((jsObject) => {
-        console.log(jsObject);
+        dayHeadings[day].innerHTML = dayOfWeek[date];
+        temps[day].innerHTML = temp.toFixed(0);
+        imgs[day].setAttribute("src", iconsrc);
 
-        const dayHeadings = document.querySelectorAll("#days");
-        let temps = document.querySelectorAll("#temps");
-        let imgs = document.querySelectorAll("#imgs");
-
-        const dayOfWeek = ["Sun", "Mon", "Tue", "Wed", "Thur", "Fri", "Sat", "Sun"];
-
-        let day = 0;
-        for (item of jsObject.list) {
-            if (item.dt_txt.includes('18:00:00')) {
-                const date = new Date(item.dt * 1000).getDay();
-                const iconsrc = "https://openweathermap.org/img/w/" + item.weather[0].icon + ".png";
-                const temp = item.main.temp_max;
-
-                dayHeadings[day].innerHTML = dayOfWeek[date];
-                temps[day].innerHTML = temp.toFixed(0);
-                imgs[day].setAttribute("src", iconsrc);
-
-                day++;
-            }
-        }
-    });
+        day++;
+      }
+    }
+  });
