@@ -57,12 +57,12 @@ h3 {
   position: relative;
 }
 
-#temp1, #temp2, #temp3, #temp4, #temp5 {
+#temps {
   color: #05386b;
   font-size: 18px;
 }
 
-#day1, #day2, #day3, #day4, #day5 {
+#days {
   background-color: #BC986A;
   color: #FBEEC1;
   font-size: 18px;
