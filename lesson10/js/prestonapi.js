@@ -30,9 +30,9 @@ fetch(apiURLForecast)
                             item.weather[0].icon + 
                             '.png';
       let date = new Date(item.dt_txt);
-      document.getElementById('day' + (day + 1)).innerHTML = dayOfWeek[date.getDay()];
+      document.getElementById('day' + (day + 1)).innerText = dayOfWeek[date.getDay()];
       document.getElementById('img' + (day + 1)).src = iconsrc;
-      document.getElementById('temp' + (day + 1)).textContent = temp.toFixed(0) + ' °F';
+      document.getElementById('temp' + (day + 1)).innerText = temp.toFixed(0) + ' °F';
       day++;
     });
   });
