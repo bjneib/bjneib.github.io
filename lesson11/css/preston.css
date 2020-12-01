@@ -66,7 +66,7 @@ h3 {
   background-color: #BC986A;
   color: #FBEEC1;
   font-size: 18px;
-  font-weight: bolder;
+  font-weight: bold;
   text-align: center;
 }
 
@@ -91,6 +91,18 @@ h3 {
 
 .content-box-2 {
   display: none;
+}
+
+.events {
+  border: 1px solid black;
+  box-shadow: 2px 2px gray;
+  margin: 15px auto;
+  text-align: center;
+  width: 50%;
+}
+
+.events hr {
+  width: 85%;
 }
 
 .content-box-3 {
