@@ -53,7 +53,7 @@ fetch(apiURLForecast)
           for (let i = 0; i < data.length; i++) {
             const event = document.createElement("p");
             event.innerText = data[i];
-            document.querySelector('.events').appendChild(event);
+            document.querySelector(".events").appendChild(event);
           }
         }
       }
