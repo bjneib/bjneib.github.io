@@ -4,7 +4,7 @@
       "name": "Scooters",
       "photo": "scooter.jpg",
       "motto": "High gas milage for 1 or 2.",
-      "averagePrice": 40.00,
+      "averagePrice": 40,
       "available": 30,
       "seats": 1-2,
       "events": [
@@ -17,7 +17,7 @@
       "name": "ATV's",
       "photo": "atv.jpg",
       "motto": "For the adventurers out there.",
-      "averagePrice": 75.00,
+      "averagePrice": 75,
       "available": 20,
       "seats": 4,
       "events": [
@@ -31,7 +31,7 @@
       "name": "Jeeps",
       "photo": "jeep.jpg",
       "motto": "Grab life by the horns.",
-      "averagePrice": 100.00,
+      "averagePrice": 100,
       "available": 10,
       "seats": 4-5,
       "events": [
