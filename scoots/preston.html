@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="5 day weather forecast for Preston, Idaho on the Weather Day website. Explore and learn before you travel.">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/preston.css">
+  <link rel="stylesheet" href="css/medium.css">
+  <link rel="stylesheet" href="css/large.css">
+  <title>Weather Day Preston</title>
+</head>
+
+<body>
+  <div id="banner">Saturday = Preston Pancakes in the Park! 9:00 a.m. Friday at the city park.
+  </div>
+  <header>
+    <picture>
+      <img src="images/weatherday.png" alt="Weather Day">
+    </picture>
+    <section>
+      <h1>Weather Day</h1>
+      <div class="sub-heading">Your 5 Day Weather Forecast</div>
+    </section>
+  </header>
+  <nav>
+    <ul class="navigation" id="my-navigation">
+      <li><a href="#" onclick="toggle()">&#9776; Menu</a></li>
+      <li><a href="https://bjneib.github.io/lesson11/index.html">Home</a></li>
+      <li><a class="active" href="https://bjneib.github.io/lesson11/preston.html">Preston</a></li>
+      <li><a href="https://bjneib.github.io/lesson11/sodasprings.html">Soda Springs</a></li>
+      <li><a href="https://bjneib.github.io/lesson11/fishhaven.html">Fish Haven</a></li>
+      <li><a href="https://bjneib.github.io/lesson11/stormcenter.html">Storm Center</a></li>
+      <li><a href="https://bjneib.github.io/lesson11/gallery.html">Gallery</a></li>
+    </ul>
+  </nav>
+  <main>
+    <h2>Preston, Idaho</h2>
+    <div class="content-box-1">
+      <!--<img src="images/weatherbanner.jpeg" alt="Banner Summary">-->
+      <picture>
+        <source media="(max-width: 500px)" srcset="images/wdd230_image_franklinOriginal.jpeg">
+        <source media="(max-width: 900px)" srcset="images/wdd230_image_franklinOriginal.jpeg">
+        <img src="/lesson11/images/wdd230_image_franklinOriginal.jpeg" alt="Banner Summary">
+      </picture>
+      <section class="box-summary">
+        <h3>Weather Summary</h3>
+        <p>Currently: <span id="current"></span></p>
+        <p>Temperature: <span id="temp"></span>°F</p>
+        <p>Wind Chill: <span id="windchill"></span>°F</p>
+        <p>Humidity: <span id="humidity"></span>%</p>
+        <p>Wind Speed: <span id="windspeed"></span> mph</p>
+      </section>
+    </div>
+    <div class="content-box-2">
+      <h3>5 Day Forecast</h3>
+      <div class="forecast">
+        <div class="content">
+          <div id="days"></div>
+          <img id="imgs" src="#" alt="#">
+          <div id="temps"></div>
+        </div>
+        <div class="content">
+          <div id="days"></div>
+          <img id="imgs" src="#" alt="#">
+          <div id="temps"></div>
+        </div>
+        <div class="content">
+          <div id="days"></div>
+          <img id="imgs" src="#" alt="#">
+          <div id="temps"></div>
+        </div>
+        <div class="content">
+          <div id="days"></div>
+          <img id="imgs" src="#" alt="#">
+          <div id="temps"></div>
+        </div>
+        <div class="content">
+          <div id="days"></div>
+          <img id="imgs" src="#" alt="#">
+          <div id="temps"></div>
+        </div>
+      </div>
+    </div>
+    <section class="events">
+      <h3>Upcoming Events:</h3>
+      <hr>
+      <p></p>
+  </section>
+    <div class="content-box-3">
+      <img src="images/fall.webp" alt="Fall">
+      <h3>Article</h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda deleniti praesentium voluptatem repellendus
+        quibusdam doloremque. Illum porro provident asperiores maxime aut dolor modi dolorum ab ipsum! Impedit expedita
+        dolores laudantium.</p>
+      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Temporibus alias fuga aut facilis rem at similique
+        cupiditate ad nam? Ea consectetur vel porro deleniti fugiat voluptate voluptas suscipit sit vitae!</p>
+    </div>
+    <div class="content-box-4">
+      <section id="contact">
+        <h3>Contact Information</h3>
+        <p>1234 Street Name</p>
+        <p>Newdale, Idaho</p>
+        <p>83436</p>
+        <p>208-123-4567</p>
+        <p>contact@weatherday.com</p>
+      </section>
+      <img src="images/preston-map.jpg" alt="Preston Map">
+    </div>
+  </main>
+  <footer>
+    <div>
+      &copy;<span id="copyright"></span>2020 | Bron Neibaur | Idaho | <a href="https://www.byui.edu/online">BYUI Online
+        Learning</a>
+    </div>
+    <span id="lastUpdate"></span>
+  </footer>
+  <script src="js/toggle.js"></script>
+  <script src="js/windchill.js"></script>
+  <script src="js/prestonapi.js"></script>
+</body>
+
+</html>

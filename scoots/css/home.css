@@ -1,0 +1,175 @@
+a {
+  color: #EFE5DC;
+  font-weight: bold;
+}
+
+#banner {
+  display: none;
+  background-color: whitesmoke;
+  text-align: center;
+  font-size: 1.2em;
+  padding: 5px;
+  font-weight: bold;
+}
+
+main {
+  margin: auto;
+}
+
+body {
+  margin: 0 auto;
+  background-color: #EFE5DC;
+  font-family: 'Poppins', sans-serif;
+}
+
+header {
+  color:  #823038;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  padding: 5px 0;
+}
+
+header img {
+  height: 80px;
+  width: auto;
+  padding-right: 10px;
+}
+
+h1 {
+  color: #823038;
+  display: flex;
+  align-items: center;
+}
+
+h2 {
+  color: #823038;
+  text-align: center;
+}
+
+img[data-src] {
+  filter: blur(0.4em);
+}
+
+img {
+  filter: blur(0px);
+  transition: filter 0.5s;
+}
+
+img[data-src] {
+  filter: blur(30px);
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 15px;
+}
+
+.container figure {
+  box-shadow: 0 0 20px black;
+  margin: 5px;
+  padding: 0;
+}
+
+.container figcaption {
+  background-color: white;
+  font-size: 15px;
+  color: black;
+  text-align: center;
+}
+
+.container img {
+  width: 100%;
+}
+
+.sub-heading {
+  margin-top: -10%;
+  margin-left: 5%;
+  font-style: italic;
+  font-size: .9em;
+  letter-spacing: 1pt;
+  color:  #823038;
+}
+
+nav {
+  width: 80%;
+  margin: 0 auto;
+  background-color: #50858B;
+  box-shadow: 0 2px 15px gray;
+}
+
+.navigation {
+  list-style: none;
+  text-align: center;
+  padding: 0;
+}
+
+.navigation li:first-child {
+  display: block;
+}
+
+.navigation li {
+  display: none;
+}
+
+.navigation a {
+  display: block;
+  padding: 10px;
+  text-align: center;
+  text-decoration: none;
+}
+
+.navigation a:hover {
+  background-color: #5497A7;
+}
+
+.active {
+  background-color: #0074aa;
+}
+
+.responsive li {
+  display: block;
+}
+
+#wireframe {
+  text-align: center;
+}
+
+#wireframe a {
+  color: #659DBD;
+}
+
+.cards {
+  text-align: center;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 5px;
+}
+
+.cards section {
+  width: 80%;
+  margin: auto;
+  border: 2px solid black;
+  border-radius: 5px;
+}
+
+.cards section img {
+  width: 70%;
+  height: auto;
+  padding: 5px;
+}
+
+footer {
+  padding: 5px 5px 10px 5px;
+  background-color:  #50858B;
+  color: #EFE5DC;
+  font-size: 14px;
+  text-align: center;
+  margin: 0 auto;
+  border-radius: 10px;
+}
+
+footer div {
+  margin-top: 2%;
+}
