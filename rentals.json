@@ -6,7 +6,7 @@
       "motto": "High gas milage for 1 or 2.",
       "averagePrice": 4,
       "available": 3,
-      "seats": 1 - 2,
+      "seats": 2,
       "events": [
         "January 8: Spring into Winter",
         "April 10-20: Celebration of Life",
@@ -33,7 +33,7 @@
       "motto": "Grab life by the horns.",
       "averagePrice": 1,
       "available": 1,
-      "seats": 4 - 5,
+      "seats": 5,
       "events": [
         "March 4: March to the Drum of Donuts",
         "September 5 - 11: Founder Days",
