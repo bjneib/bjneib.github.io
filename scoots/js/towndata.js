@@ -1,14 +1,14 @@
-const requestURL = 'https://byui-cit230.github.io/weather/data/towndata.json';
+const requestURL = 'https://bjneib.github.io/rentals.json';
 fetch(requestURL)
 .then(function (response) {
    return response.json();
 })
 .then(function (jsonObject) {
    console.table(jsonObject);  // temporary checking for valid response and data parsing
-   const towns = jsonObject['towns'];
+   const towns = jsonObject['rentals'];
   
    for (let i = 0; i < towns.length; i++) {
-      if (towns[i].name == "Preston" || towns[i].name == "Fish Haven" || towns[i].name == "Soda Springs") {
+      if (towns[i].name == "Scooters" || towns[i].name == "ATV's" || towns[i].name == "Jeeps") {
       let card = document.createElement('section');
 
       let name = document.createElement('h2');
@@ -21,14 +21,14 @@ fetch(requestURL)
       image.setAttribute('src', 'images/' + towns[i].photo);
       image.setAttribute('alt', towns[i].name);
 
-      let yearFounded = document.createElement('p');
-      yearFounded.textContent = 'Year Founded: ' + towns[i].yearFounded;
+      let averagePrice = document.createElement('p');
+      averagePrice.textContent = 'Average Price: ' + towns[i].averagePrice;
 
-      let currentPopulation = document.createElement('p');
-      currentPopulation.textContent = 'Population: ' + towns[i].currentPopulation;
+      let available = document.createElement('p');
+      available.textContent = 'Vehicles Available: ' + towns[i].available;
 
-      let averageRainfall = document.createElement('p');
-      averageRainfall.textContent = 'Annual Rainfall: ' + towns[i].averageRainfall + ' ' + 'in.';
+      let seats = document.createElement('p');
+      seats.textContent = 'Seats: ' + towns[i].seats + ' ' + 'people';
 
       let info = document.createElement('div');
 
@@ -38,9 +38,9 @@ fetch(requestURL)
       card.appendChild(image);
       info.appendChild(name);
       info.appendChild(motto);
-      info.appendChild(yearFounded);
-      info.appendChild(currentPopulation);
-      info.appendChild(averageRainfall);
+      info.appendChild(averagePrice);
+      info.appendChild(available);
+      info.appendChild(seats);
       document.querySelector('div.cards').appendChild(card);
       }
    }
