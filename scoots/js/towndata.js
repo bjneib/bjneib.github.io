@@ -22,7 +22,7 @@ fetch(requestURL)
       image.setAttribute('alt', towns[i].name);
 
       let averagePrice = document.createElement('p');
-      averagePrice.textContent = 'Average Price: ' + towns[i].averagePrice;
+      averagePrice.textContent = 'Average Price: $' + towns[i].averagePrice;
 
       let available = document.createElement('p');
       available.textContent = 'Vehicles Available: ' + towns[i].available;

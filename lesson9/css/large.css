@@ -12,6 +12,12 @@
     font-size: 40px;
   }
 
+  header img {
+    height: 175px;
+    width: auto;
+    padding-right: 10px;
+  }
+
   .cards {
     grid-template-columns: 1fr 1fr 1fr;
   }
@@ -35,7 +41,19 @@
   .container figure:hover {
     box-shadow: 0 0 50px gray;
   }
+  
+  .content {
+    border: 1px solid black;
+  }
 
+  .forecast {
+    margin-left: 250px;
+    display: grid;
+    width: 50%;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    text-align: center;
+  }
+  
   footer {
     margin-top: 3%;
     padding: 10px 10px 20px 10px;
