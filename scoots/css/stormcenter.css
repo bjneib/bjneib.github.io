@@ -1,5 +1,5 @@
 a {
-  color: #FBEEC1;
+  color: #EFE5DC;
   font-weight: bold;
 }
 
@@ -85,12 +85,12 @@ form label.top input:required:valid {
 
 body {
   margin: 0 auto;
-  background-color: #FFFDE7;
-  font-family: 'Poppins', sans-serif;
+  background-color: #E5E5DC;
+  font-family: 'Catamaran', sans-serif;
 }
 
 header {
-  color: #FBEEC1;
+  color: #823038;
   align-items: center;
   justify-content: center;
   display: flex;
@@ -104,13 +104,13 @@ header img {
 }
 
 h1 {
-  color: #659DBD;
+  color: #823038;
   display: flex;
   align-items: center;
 }
 
 h2 {
-  color: #659DBD;
+  color: #823038;
   text-align: center;
 }
 
@@ -156,13 +156,13 @@ img[data-src] {
   font-style: italic;
   font-size: .9em;
   letter-spacing: 1pt;
-  color: #659DBD;
+  color: #823038;
 }
 
 nav {
   width: 80%;
   margin: 0 auto;
-  background-color: #BC986A;
+  background-color: #50858B;
   box-shadow: 0 2px 15px gray;
 }
 
@@ -188,11 +188,11 @@ nav {
 }
 
 .navigation a:hover {
-  background-color: #a07032;
+  background-color: #5497A7;
 }
 
 .active {
-  background-color: #89581a;
+  background-color: #0074aa;
 }
 
 .responsive li {
@@ -201,8 +201,8 @@ nav {
 
 footer {
   padding: 5px 5px 10px 5px;
-  background-color: #BC986A;
-  color: #FBEEC1;
+  background-color: #50858B;
+  color: #EFE5DC;
   font-size: 14px;
   text-align: center;
   margin: 0 auto;
