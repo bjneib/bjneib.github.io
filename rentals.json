@@ -41,56 +41,52 @@
       ]
     },
     {
-      "name": "Greenville",
-      "photo": "greenville.jpg",
-      "motto": "Green is our way of life.",
-      "yearFounded": 1805,
-      "currentPopulation": 33458,
-      "averageRainfall": 25,
-      "events": [
-        "February 10-12: Greenbration",
-        "May 8 - 18: Greenville Founder Days",
-        "June 20: Verde and Valiant Day",
-        "November 15-16: Greensome Gathering"
-      ]
+      "type": "Honda Metro Scooter",
+      "persons": 1,
+      "halfRes": "$20",
+      "fullRes": "$30",
+      "halfWalk": "$25",
+      "fullWalk": "$35"
     },
     {
-      "name": "Placerton",
-      "photo": "placerton.jpg",
-      "motto": "Positive Placement in Placerton.",
-      "yearFounded": 1946,
-      "currentPopulation": 512,
-      "averageRainfall": 39,
-      "events": [
-        "July 4: A Blaze of Glory",
-        "October 20: Fall through Fall"
-      ]
+      "type": "Honda Dio Scooter",
+      "persons": 2,
+      "halfRes": "$30",
+      "fullRes": "$40",
+      "halfWalk": "$35",
+      "fullWalk": "$45"
     },
     {
-      "name": "Preston",
-      "photo": "preston.jpg",
-      "motto": "Home of Napoleon Dynamite.",
-      "yearFounded": 1866,
-      "currentPopulation": 5204,
-      "averageRainfall": 16.65,
-      "events": [
-        "March 29: Work Creek Revival",
-        "July 8-12: Napoleon Dynamite Festival",
-        "November 2-4: Freedom Days"
-      ]
+      "type": "Honda PCX150 Scooter",
+      "persons": 2,
+      "halfRes": "$40",
+      "fullRes": "$50",
+      "halfWalk": "$45",
+      "fullWalk": "$55"
     },
     {
-      "name": "Soda Springs",
-      "photo": "sodasprings.jpg",
-      "motto": "Historic Oregon Trail Oasis. The Soda is on Us.",
-      "yearFounded": 1858,
-      "currentPopulation": 2985,
-      "averageRainfall": 15.75,
-      "events": [
-        "February 29: Geyser Song Day",
-        "May 1-6: Days of May Celebration",
-        "October 15-16: Octoberfest"
-      ]
+      "type": "Honda Pioneer ATV",
+      "persons": 4,
+      "halfRes": "$50",
+      "fullRes": "$70",
+      "halfWalk": "$60",
+      "fullWalk": "$80"
+    },
+    {
+      "type": "Jeep Wrangler - 4 door with A/C",
+      "persons": 5,
+      "halfRes": "$70",
+      "fullRes": "$100",
+      "halfWalk": "$85",
+      "fullWalk": "$125"
+    },
+    {
+      "type": "Jeep Wrangler - 2 door",
+      "persons": 4,
+      "halfRes": "$65",
+      "fullRes": "$85",
+      "halfWalk": "$70",
+      "fullWalk": "$90"
     }
   ]
 }
