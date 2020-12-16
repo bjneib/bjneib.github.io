@@ -1,0 +1,32 @@
+caption {
+    background-color: #823038;
+    color: #EFE5DC;
+    font-size: 25px;
+    font-weight: bold;
+    padding: 8px;
+    border: solid 1.5px;
+  }
+  
+  th {
+    background-color:  #EFE5DC;
+    font-weight: bold;
+    padding: 5px;
+    border: solid 1.5px;
+  }
+  
+  td {
+    border: solid 1.5px;
+    padding: 5px;
+  }
+  
+  tr:nth-child(even) {
+    background: rgb(243, 225, 225);
+  }
+  
+  #Info {
+    margin: 0 auto;
+    width: 100%;
+    text-align: center;
+    margin-top: 5px;
+    border-collapse: collapse;
+  }

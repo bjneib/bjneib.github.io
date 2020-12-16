@@ -11,6 +11,7 @@
   <link rel="stylesheet" href="css/preston.css">
   <link rel="stylesheet" href="css/medium.css">
   <link rel="stylesheet" href="css/large.css">
+  <link rel="stylesheet" href="css/tablebuild.css">
   <title>Scoots - Rentals and Tours</title>
 </head>
 
@@ -39,15 +40,84 @@
   </nav>
   <main>
     <h2>Rentals</h2>
-   
-      <h3>Article</h3>
+    <div class="content-box-3">
+      <h3>Information</h3>
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda deleniti praesentium voluptatem repellendus
         quibusdam doloremque. Illum porro provident asperiores maxime aut dolor modi dolorum ab ipsum! Impedit expedita
         dolores laudantium.</p>
       <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Temporibus alias fuga aut facilis rem at similique
         cupiditate ad nam? Ea consectetur vel porro deleniti fugiat voluptate voluptas suscipit sit vitae!</p>
     </div>
-  
+    <div class="content-box-3">
+      <table id="Info">
+        <caption>Max Persons and Price Chart (includes Tax)</caption>
+        <thead>
+          <tr>
+            <th colspan="2"></th>
+            <th colspan="2">Reservation</th>
+            <th colspan="2">Walk-In</th>
+          </tr>
+          <tr>
+            <th>Rental Type</th>
+            <th>Max. Persons</th>
+            <th>Half Day (3 hrs)</th>
+            <th>Full Day</th>
+            <th>Half Day (3 hrs)</th>
+            <th>Full Day</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>~Honda Metro Scooter</td>
+            <td>1</td>
+            <td id="rhd1"></td>
+            <td id="rfd1"></td>
+            <td id="whd1"></td>
+            <td id="wfd1"></td>
+          </tr>
+          <tr>
+            <td>~Honda Dio Scooter</td>
+            <td>2</td>
+            <td id="rhd2"></td>
+            <td id="rfd2"></td>
+            <td id="whd2"></td>
+            <td id="wfd2"></td>
+          </tr>
+          <tr>
+            <td>~Honda PCX150 Scooter</td>
+            <td>2</td>
+            <td id="rhd3"></td>
+            <td id="rfd3"></td>
+            <td id="whd3"></td>
+            <td id="wfd3"></td>
+          </tr>
+          <tr>
+            <td>Honda Pioneer ATV</td>
+            <td>4</td>
+            <td id="rhd4"></td>
+            <td id="rfd4"></td>
+            <td id="whd4"></td>
+            <td id="wfd4"></td>
+          </tr>
+          <tr>
+            <td>Jeep Wrangler - 4 door with a/c</td>
+            <td>5</td>
+            <td id="rhd5"></td>
+            <td id="rfd5"></td>
+            <td id="whd5"></td>
+            <td id="wfd5"></td>
+          </tr>
+          <tr>
+            <td>Jeep Wrangler - 2 door</td>
+            <td>4</td>
+            <td id="rhd6"></td>
+            <td id="rfd6"></td>
+            <td id="whd6"></td>
+            <td id="wfd6"></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
   </main>
   <footer>
     <div>
@@ -57,6 +127,7 @@
     <span id="lastUpdate"></span>
   </footer>
   <script src="js/toggle.js"></script>
+  <script src="js/rentals.js"></script>
 </body>
 
 </html>
