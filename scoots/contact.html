@@ -7,8 +7,10 @@
   <meta name="description"
     content="Come and explore the wonderful island of Cozumel! We will supply you with rentals and tours!">
   <link href="https://fonts.googleapis.com/css2?family=Catamaran&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/preston.css">
+  <link rel="stylesheet" href="css/stormcenter.css">
   <link rel="stylesheet" href="css/medium.css">
   <link rel="stylesheet" href="css/large.css">
   <title>Scoots - Rentals and Tours</title>
@@ -39,77 +41,56 @@
   </nav>
   <main>
     <h2>Contact</h2>
-    <div class="content-box-1">
-      <!--<img src="images/weatherbanner.jpeg" alt="Banner Summary">-->
-      <picture>
-        <source media="(max-width: 500px)" srcset="images/fishhaven-banner.jpg">
-        <source media="(max-width: 900px)" srcset="images/fishhaven-banner.jpg">
-        <img src="/lesson11/images/fishhaven-banner.jpg" alt="Banner Summary">
-      </picture>
-      <section class="box-summary">
-        <h3>Weather Summary</h3>
-        <p>Currently: <span id="current"></span></p>
-        <p>Temperature: <span id="temp"></span>°F</p>
-        <p>Wind Chill: <span id="windchill"></span>°F</p>
-        <p>Humidity: <span id="humidity"></span>%</p>
-        <p>Wind Speed: <span id="windspeed"></span> mph</p>
-      </section>
-    </div>
-    <div class="content-box-2">
-      <h3>5 Day Forecast</h3>
-      <div class="forecast">
-        <div class="content">
-          <div id="days"></div>
-          <img id="imgs" src="#" alt="#">
-          <div id="temps"></div>
-        </div>
-        <div class="content">
-          <div id="days"></div>
-          <img id="imgs" src="#" alt="#">
-          <div id="temps"></div>
-        </div>
-        <div class="content">
-          <div id="days"></div>
-          <img id="imgs" src="#" alt="#">
-          <div id="temps"></div>
-        </div>
-        <div class="content">
-          <div id="days"></div>
-          <img id="imgs" src="#" alt="#">
-          <div id="temps"></div>
-        </div>
-        <div class="content">
-          <div id="days"></div>
-          <img id="imgs" src="#" alt="#">
-          <div id="temps"></div>
-        </div>
-      </div>
-    </div>
-    <section class="events">
-        <h3>Upcoming Events:</h3>
-        <hr>
-        <p></p>
-    </section>
     <div class="content-box-3">
-      <img src="images/night-article.jpg" alt="Fall">
-      <h3>Article</h3>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda deleniti praesentium voluptatem repellendus
-        quibusdam doloremque. Illum porro provident asperiores maxime aut dolor modi dolorum ab ipsum! Impedit expedita
-        dolores laudantium.</p>
-      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Temporibus alias fuga aut facilis rem at similique
-        cupiditate ad nam? Ea consectetur vel porro deleniti fugiat voluptate voluptas suscipit sit vitae!</p>
+      <h3>Rental Information</h3>
+      <p>
+        <dl>
+          <li>Honda Motor Scooters</li>
+          <dd>Honda Metropolitan (49cc) - 1 person</dd>
+          <dd>Honda Dio (110cc) - 2 person</dd>
+          <dd>Honda PCX150 (149cc) - 2 person</dd>
+          <li>ATV Side-by-Side</li>
+          <dd>Honda Pioneer 1000</dd>
+          <li>Jeep Rentals</li>
+          <dd>4-door Jeep Wrangler - manual with A/C - 5 people max</dd>
+          <dd>2-door Jeep Wrangler - open air - manual - 4 people max</dd>
+        </dl>
+      </p>
+    </div>
+
+    <div class="content-box-3">
+      <h3>Reach out to us!</h3>
+      <p>Feel free to contact us with your questions or concerns. Our employees will make sure that we will help in any
+        way that we can.</p>
+      <p>We have several options that are available to get a hold of us. Please choose whichever is best for you.</p>
+      <a href="#" class="fa fa-facebook"></a>
+      <a href="#" class="fa fa-twitter"></a>
+      <a href="#" class="fa fa-yahoo"></a>
     </div>
     <div class="content-box-4">
       <section id="contact">
         <h3>Contact Information</h3>
-        <p>1234 Fish Street</p>
-        <p>Fish Haven, Idaho</p>
-        <p>83456</p>
-        <p>208-987-6543</p>
-        <p>contact@weatherday.com</p>
+        <p>Av Andres Q Roo</p>
+        <p>San Miguel de Cozumel, Mexico</p>
+        <p>12345</p>
+        <p>123-456-7890</p>
+        <p>contact@scoots.com</p>
       </section>
-      <img src="images/fishhaven-map.PNG" alt="Preston Map">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d239283.63938302264!2d-87.01433952055872!3d20.432027527448195!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1scozumel!5e0!3m2!1sen!2sus!4v1608066128236!5m2!1sen!2sus"
+        width="400" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
+        tabindex="0"></iframe>
     </div>
+    <form method="get" action="send.html">
+      <fieldset>
+        <legend>Personal Information</legend>
+        <label class="top">*Full Name: <input type="text" name="fname" pattern="^[a-zA-Z\s\-\.]{5,}$" required></label>
+        <label class="top">*Email: <input type="email" name="email" placeholder="someone@gmail.com" required></label>
+        <label class="top">Comments <textarea name="comments" rows="4"
+            cols="50"></textarea></label>
+      </fieldset>
+      <input type="submit" value="Send" class="submitBtn">
+    </form>
   </main>
   <footer>
     <div>
@@ -119,8 +100,6 @@
     <span id="lastUpdate"></span>
   </footer>
   <script src="js/toggle.js"></script>
-  <script src="js/windchill.js"></script>
-  <script src="js/fishhavenapi.js"></script>
 </body>
 
 </html>
