@@ -16,9 +16,8 @@ fetch(urlRequest)
 
       let row = 0;
 
-      persons[row].querySelector(".persons");
-      temps[day].innerHTML = temp.toFixed(0);
-      imgs[day].setAttribute("src", iconsrc);
+      persons[row].innerHTML = 
+      halfRes[row].innerHTML = halfRes
 
       row++;
    });
