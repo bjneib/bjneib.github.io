@@ -23,10 +23,9 @@ caption {
     background: rgb(243, 225, 225);
   }
   
-  #Info {
+  .table {
     margin: 0 auto;
     width: 100%;
     text-align: center;
     margin-top: 5px;
-    border-collapse: collapse;
   }
